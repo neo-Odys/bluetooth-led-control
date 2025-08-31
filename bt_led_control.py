@@ -15,6 +15,8 @@ except serial.SerialException:
 
 led_manual = False
 
+print("Waiting for commands...")  
+
 try:
     while True:
         if GPIO.input(21) == GPIO.LOW:
